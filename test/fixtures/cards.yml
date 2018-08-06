@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  layout: MyString
+  name: MyString
+  manaCost: MyString
+  cmc: 
+  colors: 
+  type: 
+  types: 
+  text: MyText
+  imageName: MyString
+  rulings: 
+  printings: 
+  legalities: 
+  colorIdentity: 
+
+two:
+  layout: MyString
+  name: MyString
+  manaCost: MyString
+  cmc: 
+  colors: 
+  type: 
+  types: 
+  text: MyText
+  imageName: MyString
+  rulings: 
+  printings: 
+  legalities: 
+  colorIdentity: 

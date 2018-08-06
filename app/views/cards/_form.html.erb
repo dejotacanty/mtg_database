@@ -1,0 +1,82 @@
+<%= form_with(model: card, local: true) do |form| %>
+  <% if card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :layout %>
+    <%= form.text_field :layout %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manaCost %>
+    <%= form.text_field :manaCost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cmc %>
+    <%= form.text_field :cmc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colors %>
+    <%= form.text_field :colors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :types %>
+    <%= form.text_field :types %>
+  </div>
+
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_area :text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imageName %>
+    <%= form.text_field :imageName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rulings %>
+    <%= form.text_field :rulings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :printings %>
+    <%= form.text_field :printings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :legalities %>
+    <%= form.text_field :legalities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colorIdentity %>
+    <%= form.text_field :colorIdentity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
